@@ -171,6 +171,9 @@ img {
 .navigation {
   border: 1px solid blue;
 }
+.navigation .nav-container {
+  width: 800px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
