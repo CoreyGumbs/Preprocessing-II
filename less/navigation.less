@@ -1,8 +1,28 @@
 // Navigation Styles here
 .navigation{
-    border: 1px solid blue;
+    max-width: @max-width;
+    height: @nav-height;
+    .border(border-bottom, 2px, @navigation-border);
+    .flexBox(row, wrap, space-between, center);
 
     .nav-container{
         width: @container-width;
+        margin: auto;
+        .flexBox(row, wrap, space-between, center);
+
+        .nav-header{
+            border: 1px solid green;
+        }
+        .nav-links{
+            width: @nav-links-container-width;
+            .flexBox(row, wrap, space-evenly, center);
+    
+
+            a{
+                padding: 2% 3%;
+                font-size: 1.8rem;
+                text-decoration: none;
+            }
+        }
     }
 }
