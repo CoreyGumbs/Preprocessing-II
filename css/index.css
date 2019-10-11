@@ -213,6 +213,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .hero-section {
+  padding-bottom: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .hero-section .hero-header {
+  margin: 20px 0 10px 0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
