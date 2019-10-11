@@ -218,7 +218,7 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .hero-section .hero-header {
-  margin: 20px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -265,4 +265,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  text-align: center;
+  padding: 15px;
+  background-color: #17A2B8;
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-radius: 20px;
 }
