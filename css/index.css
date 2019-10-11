@@ -328,4 +328,8 @@ img {
   .home .content-destination {
     width: 100%;
   }
+  .home .content-pick .destination {
+    padding: 0 50px;
+    width: 100%;
+  }
 }
