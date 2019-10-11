@@ -15,8 +15,6 @@
     // flex-wrap: wrap;
     // justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -75,6 +73,23 @@
   }
 
   @media@mobile{
+    .content-section{
+      width: @max-width;
+      .flexBox(column, nowrap, space-between);
+
+      .text-content{
+        width: @max-width;
+      }
+
+      .img-content{
+        width: @max-width;
+        padding: 0;
+
+        img{
+          width: @max-width;
+        }
+      }
+    }
     
   }
 }// home

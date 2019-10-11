@@ -301,3 +301,22 @@ img {
   color: #FFFFFF;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: none;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
