@@ -1,1 +1,22 @@
 // Mixins in here
+.borderBtm(@brdr-size: 1px, @brdr-color){
+    border-bottom: @brdr-size dashed @brdr-color;
+}
+
+
+.flexBox(@direction: row, @wrap: wrap, @justify: flex-start, @align: none){
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+
+.signupBtn(@padding, @bg-color, @color, @font-size, @radius){
+    padding: @padding;
+    background-color: @bg-color;
+    font-size: @font-size;
+    color: @color;
+    border-radius: @radius;
+
+}

@@ -1,13 +1,20 @@
 .home {
+  .hero-section{
+    padding-bottom: 2%;
+    .borderBtm( 2px, @navigation-border);
+
+    .hero-header{
+      margin: 3% 0 1% 0;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flexBox(row, wrap, space-between);
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -50,12 +57,53 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flexBox(row, wrap, space-between);
+    // display: flex;
+    // justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        text-align: center;
+        .signupBtn(15px, @button-bg, @white, 2rem, 15px);
+      }
+    }
+  }
+
+  @media@mobile{
+    .content-section{
+      width: @max-width;
+      .flexBox(column, nowrap, space-between);
+
+      .text-content{
+        width: @max-width;
+      }
+
+      .img-content{
+        width: @max-width;
+        padding: 0;
+
+        img{
+          width: @max-width;
+        }
+      }
+    }
+
+    .inverse-content{
+      .flexBox(column-reverse, wrap, center, center);
+    }
+
+    .content-destination{
+      width: @max-width;
+    }
+    
+    .content-pick{
+      .destination{
+        padding: 0 50px;
+        width: 100%;
+      }
     }
   }
 }// home

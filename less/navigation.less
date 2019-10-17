@@ -1,1 +1,49 @@
 // Navigation Styles here
+.navigation{
+    max-width: @max-width;
+    height: @nav-height;
+    .borderBtm( 2px, @navigation-border);
+    .flexBox(row, wrap, space-between, center);
+
+    .nav-container{
+        width: @container-width;
+        margin: auto;
+        .flexBox(row, wrap, space-between, center);
+
+        .nav-header{
+            width: 30%;
+            padding:2% 0;
+        }
+        .nav-links{
+           
+            width: @nav-links-container-width;
+            .flexBox(row, wrap, space-evenly, center);
+
+            a{
+                padding: 2% 0;
+                font-size: 1.8rem;
+                text-decoration: none;
+                color: @shark;
+            }
+        }
+    }
+
+    @media@mobile{
+        padding-bottom: 2.5%;
+        
+        .nav-container{
+            .flexBox(column, wrap, center, center);
+    
+            .nav-header{ 
+                width: @max-width;
+                margin-top: 2.5%;
+                text-align: center; 
+            }
+
+            .nav-links{
+                width: @max-width;
+             
+            }
+        }
+    }
+}
